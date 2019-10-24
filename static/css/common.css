@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    z-index: 420;
+}
+
+.navbar-brand img {
+    height: 1.5rem;
+}
+
+.relay-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+.relay-container nav {
+    width: 16.67%;
+    overflow-y: auto;
+}
+
+.relay-container main {
+    background: #eee;
+    width: 83.33%;
+    overflow-y: auto;
+}
