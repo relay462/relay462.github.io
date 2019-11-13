@@ -21,20 +21,24 @@
 
     <!-- Import custom style sheets below here -->
     <link href="../../static/css/common.css" rel="stylesheet"/>
-    
+
     <!-- START: Google stuff -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
-         (adsbygoogle = window.adsbygoogle || []).push({
-              google_ad_client: "ca-pub-1105654536755797",
-              enable_page_level_ads: true
-         });
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-1105654536755797",
+            enable_page_level_ads: true
+        });
     </script>
-    
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85724833-4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-85724833-4');
@@ -48,10 +52,10 @@
                 alt="logo"
                 src="../../static/img/logo.png"/>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -76,61 +80,77 @@
 <div class="relay-container">
     <nav>
         <div class="list-group list-group-flush">
-            <a href="" class="list-group-item list-group-item-action">
+            <a href="" class="list-group-item active list-group-item-action">
                 Gaming
             </a>
-            <a href="../music/index.html" class="list-group-item list-group-item-action">
+            <a href="../music" class="list-group-item list-group-item-action">
                 Music
             </a>
-            <a href="../irl/index.html" class="list-group-item list-group-item-action">
+            <a href="../irl" class="list-group-item list-group-item-action">
                 IRL
             </a>
         </div>
     </nav>
 
     <main class="container-fluid">
-        <br>
-        <table>
-        <tr>
-            <td>
-            <h3>Teamfight Tactics</h3>
-            <p>Set in the fractured, dream-like Convergence, Teamfight Tactics is a new game mode in League of Legends that pits you against seven opponents in a free-for-all war for supremacy. Build the ultimate team, power-up your forces, then watch the battle unfold. Do you have what it takes to be the last player standing?</p>
-            </td>          
-        </tr>
-
-        <tr>
-            <!-- Scarra -->
-            <td><iframe width="490" height="315" src="https://www.youtube.com/embed/M6QqRDNYZcA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </td>
-            <!-- DisguisedToast -->
-            <td><iframe width="490" height="315" src="https://www.youtube.com/embed/W-LL6VYF_f4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </td>   
-        </tr>
-            
-        <tr>
-            <td>
-            <h3>League of Legends</h3>
-            <p>League of Legends features an ever-expanding roster of champions, each with a unique design and playstyle. Two teams of five champions battle across three lanes and an expansive jungle that holds powerful buffs and major neutral objectives. An extended laning phase and large-scale team fights are characteristic of this battlefield.</p>
-            </td>    
-        </tr>
-            
-        <tr>
-            <!-- KBVTV -->
-            <td><iframe width="490" height="315" src="https://www.youtube.com/embed/Q52KSHnRqmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-            <!-- 10 Years of Akali -->
-            <td><iframe width="490" height="315" src="https://www.youtube.com/embed/wgCbC1gzmeM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-            
-        </tr>
-        
-        </table>
-
-        
+        <h1 class="display-1 font-weight-bold">Gaming</h1>
+        <section class="mb-5">
+            <h2>Teamfight Tactics</h2>
+            <p>
+                Set in the fractured, dream-like Convergence, Teamfight Tactics is a new game mode in League of Legends
+                that pits you against seven opponents in a free-for-all war for supremacy. Build the ultimate team,
+                power-up your forces, then watch the battle unfold. Do you have what it takes to be the last player
+                standing?
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/M6QqRDNYZcA"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/W-LL6VYF_f4"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-5">
+            <h2>League of Legends</h2>
+            <p>
+                League of Legends features an ever-expanding roster of champions, each with a unique design and
+                playstyle. Two teams of five champions battle across three lanes and an expansive jungle that holds
+                powerful buffs and major neutral objectives. An extended laning phase and large-scale team fights are
+                characteristic of this battlefield.
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/Q52KSHnRqmw"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/wgCbC1gzmeM"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </div>
 
-    
-    
-    
 <!-- START: Template scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
