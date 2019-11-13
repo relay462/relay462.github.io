@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="spm_prefix" content="333.999">
-	<title>Personal page</title>
+	<title>Login page</title>
 	<!-- START: Template styles -->
     <link
             href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -24,13 +24,11 @@
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark blue">
-	<a class="navbar-brand" href="index.html">
+
+    <a class="navbar-brand" href="index.html">
         <img
                 alt="logo"
                 src="static/img/logo.png"/>
-    </a>
-    <a class="navbar-brand" href="">
-        <header>Your Personal Page</header>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -48,32 +46,18 @@
             </li>
         </ul>
     </div>
-    
 </nav>
-<div style = "position:relative; left:10px; top:10px;">
-	<img src="static/img/headshot.jpg" alt="HTML5 Icon" style="width:128px;height:128px;">
-	<b style = "position:absolute; left:10px; top:145px;">User's name</b>
-	<strong style = "position:absolute; left:10px; top:165px;">User's signature</strong>
-	<button style="position:absolute;left:250px;top:20px;font-size:24px;">New Post</button>
-	<button style="position:absolute;left:400px;top:20px;font-size:24px;">New Video</button>
-	<button style="position:absolute;left:550px;top:20px;font-size:24px;">Start Live Stream!</button>
-</div>
-<div style="position:relative;left:400px;top:20px;">
-	<h2>Videos</h2>
-	<iframe width="420" height="315"
-		src="https://www.youtube.com/embed/tgbNymZ7vqY">
-	</iframe>
-</div>
-<div style="position:relative;left:400px;top:50px;">
-	<h2>Posts</h2>
-	<img src="static/img/vege.jpg" class="mr-3" alt="Post content" style="width:350px;height:250px;">
-  	<div class="media-body">
-    	<h5 class="mt-0">Let's eat healthy!</h5>
-    	Eating vegetables is good for your health! 
-  	</div>
+
+<div class="container">
+	<label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+	
+	<a href="file:///Users/baiyuzhu/Desktop/DSO462/relay462.github.io/personalPage.html" class="button">Login</a>
 </div>
 
-	
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
