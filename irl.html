@@ -20,7 +20,7 @@
     <!-- END: Template styles -->
 
     <!-- Import custom style sheets below here -->
-    <link href="../static/css/common.css" rel="stylesheet"/>
+    <link href="static/css/common.css" rel="stylesheet"/>
     
     <!-- START: Google stuff -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -43,10 +43,10 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark blue">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="index.html">
         <img
                 alt="logo"
-                src="../static/img/logo.png"/>
+                src="static/img/logo.png"/>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -54,13 +54,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="">Live streams</a>
+                <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../blogs/index.html">Blogs</a>
+                <a class="nav-link" href="live-streams/index.html">Live streams</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blogs/index.html">Blogs</a>
             </li>
         </ul>
     </div>
@@ -69,13 +69,13 @@
 <div class="relay-container">
     <nav>
         <div class="list-group list-group-flush">
-            <a href="../gaming.html" class="list-group-item list-group-item-action">
+            <a href="gaming.html" class="list-group-item list-group-item-action">
                 Gaming
             </a>
-            <a href="../music.html" class="list-group-item list-group-item-action">
+            <a href="music.html" class="list-group-item list-group-item-action">
                 Music
             </a>
-            <a href="../irl.html" class="list-group-item list-group-item-action">
+            <a href="" class="list-group-item list-group-item-action">
                 IRL
             </a>
         </div>
@@ -83,11 +83,27 @@
 
     <main class="container-fluid">
         <br>
-        <ul>
-            <li><a href="stream.html?user=DisguisedToast">DisguisedToast</a></li>
-            <li><a href="stream.html?user=Aphromoo">Aphromoo</a></li>
-            <li><a href="stream.html?user=kazdingle">Kazdingle</a></li>
-        </ul>
+        <table>
+        <tr>
+            <h3>IRL</h3>
+            <p>Come watch what your favorite streamers are up to today, or listen to a relaxing podcast about the current state of your favorite games!</p>
+            <!-- Relationships & Streaming -->
+            <td><iframe width="490" height="315" src="https://www.youtube.com/embed/F2BYZad74uE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+            <!-- LilyPichu AX 2018 -->
+            <td><iframe width="490" height="315" src="https://www.youtube.com/embed/tQk2V3OwzgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+        </tr>
+        <tr>
+            <!-- C9 Summing Insight-->
+            <td><iframe width="490" height="315" src="https://www.youtube.com/embed/WP2-uOPyKM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+            <!-- Twitchcon IRL Podcast -->
+            <td><iframe width="490" height="315" src="https://www.youtube.com/embed/klsaqeUzPVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+        </tr>
+        
+        </table>
+
+        
     </main>
 </div>
 

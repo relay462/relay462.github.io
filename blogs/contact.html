@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- REPLACE TITLE WITH APPROPRIATE CONTENT -->
-    <title>RELAY &ndash; Share your content with Relay!</title>
+    <title>RELAY &ndash; Live Streams</title>
 
     <!-- START: Template styles -->
     <link
@@ -20,46 +20,73 @@
     <!-- END: Template styles -->
 
     <!-- Import custom style sheets below here -->
-    <link href="static/css/common.css" rel="stylesheet"/>
+    <link href="../static/css/common.css" rel="stylesheet"/>
+    
+    <!-- START: Google stuff -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-1105654536755797",
+              enable_page_level_ads: true
+         });
+    </script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85724833-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-85724833-4');
+    </script>
+    <!-- END: Google stuff -->
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark blue">
-    <a class="navbar-brand" href="">
+    <a class="navbar-brand" href="../index.html">
         <img
                 alt="logo"
-                src="static/img/logo.png"/>
+                src="../static/img/logo.png"/>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../live-streams/index.html">Live streams</a>
+            </li>
             <li class="nav-item active">
-                <a class="nav-link" href="">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="live-streams/index.html">Live streams</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="blogs/index.html">Blogs</a>
+                <a class="nav-link" href="index.html">Blogs</a>
             </li>
         </ul>
     </div>
 </nav>
 
-<main>
-    <div class="jumbotron card card-image" style="background-image: url(https://relay1.files.wordpress.com/2019/10/gaming.jpg);">
-        <div class="text-white text-center py-5 px-4">
-            <div>
-                <img
-                        alt="hero-image"
-                        src="static/img/logo-light.png"/>
-                <p class="mx-5 mb-5">Share your content with Relay!</p>
-                <a class="btn peach-gradient" href="live-streams/index.html"><i class="fas fa-play left"></i>Watch streams</a>
-            </div>
+<div class="relay-container">
+    <nav>
+        <div class="list-group list-group-flush">
+            <a href="../gaming.html" class="list-group-item list-group-item-action">
+                Gaming
+            </a>
+            <a href="../music.html" class="list-group-item list-group-item-action">
+                Music
+            </a>
+            <a href="../irl.html" class="list-group-item list-group-item-action">
+                IRL
+            </a>
         </div>
-    </div>
-</main>
+    </nav>
+
+    <main class="container-fluid">
+        <br>
+        <h1>Relay</h1>
+        <p>Contact us:</p>
+    </main>
+</div>
 
 <!-- START: Template scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

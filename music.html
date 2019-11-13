@@ -20,7 +20,7 @@
     <!-- END: Template styles -->
 
     <!-- Import custom style sheets below here -->
-    <link href="../static/css/common.css" rel="stylesheet"/>
+    <link href="static/css/common.css" rel="stylesheet"/>
     
     <!-- START: Google stuff -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -43,10 +43,10 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark blue">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="index.html">
         <img
                 alt="logo"
-                src="../static/img/logo.png"/>
+                src="static/img/logo.png"/>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -54,13 +54,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="">Live streams</a>
+                <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../blogs/index.html">Blogs</a>
+                <a class="nav-link" href="live-streams/index.html">Live streams</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blogs/index.html">Blogs</a>
             </li>
         </ul>
     </div>
@@ -69,13 +69,13 @@
 <div class="relay-container">
     <nav>
         <div class="list-group list-group-flush">
-            <a href="../gaming.html" class="list-group-item list-group-item-action">
+            <a href="gaming.html" class="list-group-item list-group-item-action">
                 Gaming
             </a>
-            <a href="../music.html" class="list-group-item list-group-item-action">
+            <a href="" class="list-group-item list-group-item-action">
                 Music
             </a>
-            <a href="../irl.html" class="list-group-item list-group-item-action">
+            <a href="irl.html" class="list-group-item list-group-item-action">
                 IRL
             </a>
         </div>
@@ -83,11 +83,33 @@
 
     <main class="container-fluid">
         <br>
-        <ul>
-            <li><a href="stream.html?user=DisguisedToast">DisguisedToast</a></li>
-            <li><a href="stream.html?user=Aphromoo">Aphromoo</a></li>
-            <li><a href="stream.html?user=kazdingle">Kazdingle</a></li>
-        </ul>
+        <table>
+        <tr>
+            <h3>Music</h3>
+            <p>Whether you're here for some lofi hip hop or the newest cover from SleightlyMusical, we've got a song for you. </p>
+            <!-- Lofi -->
+            <td><iframe width="500" height="315" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+            <!-- Another Lofi -->
+            <td><iframe width="500" height="315" src="https://www.youtube.com/embed/EcEMX-63PKY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+        </tr>
+        <tr>
+            <!-- KDA-->
+            <td><iframe width="500" height="315" src="https://www.youtube.com/embed/UOxkGD8qRB4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+            <!-- RISE -->
+            <td><iframe width="500" height="315" src="https://www.youtube.com/embed/fB8TyLTD7EE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+            <!-- 10 years -->
+            <td><iframe width="500" height="315" src="https://www.youtube.com/embed/MFaynwTPbVk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+            <!-- Your lie in April -->
+            <td><iframe width="500" height="315" src="https://www.youtube.com/embed/j1Xf7AxO2a0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+        </tr>
+            
+        </table>
+
+        
     </main>
 </div>
 
