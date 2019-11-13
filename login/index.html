@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="spm_prefix" content="333.999">
-	<title>Login page</title>
-	<!-- START: Template styles -->
+    <meta charset="UTF-8">
+    <meta name="spm_prefix" content="333.999">
+    <title>Login page</title>
+    <!-- START: Template styles -->
     <link
             href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
             rel="stylesheet"
@@ -22,14 +22,15 @@
 </head>
 
 
-<body>
+<body class="bg-light">
 <nav class="navbar navbar-expand-lg navbar-dark blue">
     <a class="navbar-brand" href="../">
         <img
                 alt="logo"
                 src="../static/img/logo.png"/>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -53,14 +54,32 @@
     </div>
 </nav>
 
-<div class="container">
-	<label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-	
-	<a href="../profile" class="button">Login</a>
+<div class="container h-100 d-flex align-items-center justify-content-center">
+    <div class="card w-50 mb-5">
+        <div class="card-header info-color white-text text-center pt-4">
+            <h3>Sign in</h3>
+        </div>
+        <div class="card-body">
+            <form class="md-form">
+                <div class="md-form md-outline">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" class="form-control" required>
+                </div>
+                <div class="md-form md-outline">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" required>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <div>
+                        <a href="">Forgot password?</a>
+                    </div>
+                </div>
+            </form>
+            <div class="d-flex justify-content-center">
+                <a href="../profile" class="btn peach-gradient">Login</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 </body>
