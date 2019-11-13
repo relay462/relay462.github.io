@@ -21,20 +21,24 @@
 
     <!-- Import custom style sheets below here -->
     <link href="../static/css/common.css" rel="stylesheet"/>
-    
+
     <!-- START: Google stuff -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
-         (adsbygoogle = window.adsbygoogle || []).push({
-              google_ad_client: "ca-pub-1105654536755797",
-              enable_page_level_ads: true
-         });
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-1105654536755797",
+            enable_page_level_ads: true
+        });
     </script>
-    
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85724833-4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-85724833-4');
@@ -48,7 +52,8 @@
                 alt="logo"
                 src="../static/img/logo.png"/>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -87,24 +92,9 @@
         </div>
     </nav>
 
-    <main class="container-fluid">
-        <br>
+    <main>
         <!-- Add a placeholder for the Twitch embed -->
-    <div id="twitch-embed"></div>
-
-    <!-- Load the Twitch embed script -->
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-    <script>
-        var user = window.location.search.split("=")[1];
-
-      new Twitch.Embed("twitch-embed", {
-        width: 854,
-        height: 480,
-        channel: user
-      });
-    </script>
+        <div class="h-100" id="twitch-embed"></div>
     </main>
 </div>
 
@@ -116,5 +106,13 @@
 <!-- END: Template scripts -->
 
 <!-- Import custom scripts below here -->
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+<script>
+    new Twitch.Embed("twitch-embed", {
+        width: "100%",
+        height: "100%",
+        channel: new URL(window.location).searchParams.get("user")
+    });
+</script>
 </body>
 </html>
