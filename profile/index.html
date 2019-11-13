@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- REPLACE TITLE WITH APPROPRIATE CONTENT -->
-    <title>RELAY &ndash; Live Streams</title>
-
-    <!-- START: Template styles -->
+	<meta charset="UTF-8">
+	<title>Personal page</title>
+	<!-- START: Template styles -->
     <link
             href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
             rel="stylesheet"
@@ -34,26 +31,22 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85724833-4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
+        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'UA-85724833-4');
     </script>
     <!-- END: Google stuff -->
 </head>
+
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark blue">
-    <a class="navbar-brand" href="../">
+	<a class="navbar-brand" href="/">
         <img
                 alt="logo"
                 src="../static/img/logo.png"/>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -62,7 +55,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="../">Home</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="../live-streams">Live streams</a>
             </li>
             <li class="nav-item">
@@ -70,49 +63,38 @@
             </li>
         </ul>
         <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="../login">Login</a>
             </li>
         </ul>
     </div>
 </nav>
 
-<div class="relay-container">
-    <nav>
-        <div class="list-group list-group-flush">
-            <a href="gaming/index.html" class="list-group-item list-group-item-action">
-                Gaming
-            </a>
-            <a href="music/index.html" class="list-group-item list-group-item-action">
-                Music
-            </a>
-            <a href="irl/index.html" class="list-group-item list-group-item-action">
-                IRL
-            </a>
-        </div>
-    </nav>
+<h1>Under construction...</h1>
+<!--<div style = "position:relative; left:10px; top:10px;">-->
+<!--	<img src="../static/img/headshot.png" alt="HTML5 Icon" style="width:128px;height:128px;border:1px solid #021a40;">-->
+<!--	<b style="position:absolute; left:10px; top:145px;">Kazdingle</b>-->
+<!--</div>-->
+<!--<div style="position:relative;left:400px;top:20px;">-->
+<!--	<h2>Videos</h2>-->
+<!--	<iframe width="420" height="315"-->
+<!--		src="https://www.youtube.com/embed/tgbNymZ7vqY">-->
+<!--	</iframe>-->
+<!--</div>-->
+<!--<div style="position:relative;left:400px;top:50px;">-->
+<!--	<h2>Posts</h2>-->
+<!--	<img src="../static/img/vege.jpg" class="mr-3" alt="Post content" style="width:350px;height:250px;">-->
+<!--  	<div class="media-body">-->
+<!--    	<h5 class="mt-0">Let's eat healthy!</h5>-->
+<!--    	Eating vegetables is good for your health! -->
+<!--  	</div>-->
+<!--</div>-->
 
-    <main>
-        <!-- Add a placeholder for the Twitch embed -->
-        <div class="h-100" id="twitch-embed"></div>
-    </main>
-</div>
-
-<!-- START: Template scripts -->
+	
+</body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
-<!-- END: Template scripts -->
 
-<!-- Import custom scripts below here -->
-<script src="https://embed.twitch.tv/embed/v1.js"></script>
-<script>
-    new Twitch.Embed("twitch-embed", {
-        width: "100%",
-        height: "100%",
-        channel: new URL(window.location).searchParams.get("user")
-    });
-</script>
-</body>
 </html>
